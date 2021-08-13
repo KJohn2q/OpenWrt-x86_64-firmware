@@ -70,9 +70,8 @@ jobs:
 
     - name: Download luci-theme-atmaterial
       run: 
-        cd package
-        mkdir openwrt-packages
-        cd openwrt-packages
+        mkdir -p package/openwrt-packages
+        cd package/openwrt-packages
         git clone https://github.com/openwrt-develop/luci-theme-atmaterial.git
 
     - name: Update feeds
